@@ -11,12 +11,13 @@ struct CharacterDetail: View {
     let character: Character
 
     var body: some View {
-        VStack(alignment: .leading) {
-            Image(systemName: "person.crop.circle.fill")
-                .resizable()
-                .frame(width: 150, height: 150)
-                .padding()
-            
+        VStack(alignment: .center) {
+            Spacer()
+            Image(systemName: "persona.fill")
+                .data(url: URL(string: character.image)!)
+                .frame(width: 180, height: 180).clipped().clipShape(Circle())
+                .frame(width: 180, height: 180).clipped().clipShape(Circle())
+            Spacer()
             Text("Name: \(character.name)")
                 .font(.title)
             Text("Status: \(character.status)")

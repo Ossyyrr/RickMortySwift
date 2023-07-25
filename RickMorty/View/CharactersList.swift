@@ -33,33 +33,6 @@ struct CharactersList: View {
                 characterService.fetchCharacters()
             }
         }
-//
-//    func fetchCharacters() {
-//          guard !isLoading, let url = URL(string: "https://rickandmortyapi.com/api/character/?page=\(currentPage)") else {
-//              return
-//          }
-//
-//          isLoading = true
-//          URLSession.shared.dataTask(with: url) { data, _, error in
-//              if let data = data {
-//                  do {
-//                      let apiResponse = try JSONDecoder().decode(APIResponse.self, from: data)
-//                      DispatchQueue.main.async {
-//                          self.characters.append(contentsOf: apiResponse.results)
-//                          self.isLoading = false
-//                          self.currentPage += 1
-//                      }
-//                  } catch {
-//                      print("Error decoding data: \(error)")
-//                      self.isLoading = false
-//                  }
-//              }
-//          }.resume()
-//      }
 }
 
-struct CharactersList_Previews: PreviewProvider {
-    static var previews: some View {
-        CharactersList()
-    }
-}
+ 
