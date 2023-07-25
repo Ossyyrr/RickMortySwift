@@ -16,6 +16,8 @@
 		4B3D2CC72A6FB4A6005DE032 /* RickMortyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3D2CC62A6FB4A6005DE032 /* RickMortyTests.swift */; };
 		4B3D2CD12A6FB4A6005DE032 /* RickMortyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3D2CD02A6FB4A6005DE032 /* RickMortyUITests.swift */; };
 		4B3D2CD32A6FB4A6005DE032 /* RickMortyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3D2CD22A6FB4A6005DE032 /* RickMortyUITestsLaunchTests.swift */; };
+		4B3D2CED2A6FC061005DE032 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3D2CEC2A6FC061005DE032 /* Character.swift */; };
+		4B3D2CEF2A6FC101005DE032 /* CharacterDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3D2CEE2A6FC101005DE032 /* CharacterDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		4B3D2CCC2A6FB4A6005DE032 /* RickMortyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickMortyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B3D2CD02A6FB4A6005DE032 /* RickMortyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyUITests.swift; sourceTree = "<group>"; };
 		4B3D2CD22A6FB4A6005DE032 /* RickMortyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4B3D2CEC2A6FC061005DE032 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		4B3D2CEE2A6FC101005DE032 /* CharacterDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,9 @@
 		4B3D2CAF2A6FB4A5005DE032 /* RickMorty */ = {
 			isa = PBXGroup;
 			children = (
+				4B3D2CE12A6FB5E7005DE032 /* ViewModel */,
+				4B3D2CE02A6FB5DE005DE032 /* View */,
+				4B3D2CDF2A6FB5CF005DE032 /* Model */,
 				4B3D2CB02A6FB4A5005DE032 /* RickMortyApp.swift */,
 				4B3D2CB22A6FB4A5005DE032 /* ContentView.swift */,
 				4B3D2CB42A6FB4A6005DE032 /* Assets.xcassets */,
@@ -131,6 +138,29 @@
 				4B3D2CD22A6FB4A6005DE032 /* RickMortyUITestsLaunchTests.swift */,
 			);
 			path = RickMortyUITests;
+			sourceTree = "<group>";
+		};
+		4B3D2CDF2A6FB5CF005DE032 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B3D2CEC2A6FC061005DE032 /* Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B3D2CE02A6FB5DE005DE032 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B3D2CEE2A6FC101005DE032 /* CharacterDetail.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B3D2CE12A6FB5E7005DE032 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +294,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B3D2CBA2A6FB4A6005DE032 /* Persistence.swift in Sources */,
+				4B3D2CEF2A6FC101005DE032 /* CharacterDetail.swift in Sources */,
 				4B3D2CB32A6FB4A5005DE032 /* ContentView.swift in Sources */,
+				4B3D2CED2A6FC061005DE032 /* Character.swift in Sources */,
 				4B3D2CBD2A6FB4A6005DE032 /* RickMorty.xcdatamodeld in Sources */,
 				4B3D2CB12A6FB4A5005DE032 /* RickMortyApp.swift in Sources */,
 			);
